@@ -27,7 +27,9 @@ const App = () => {
     setWrongResults(prevWrong => [...prevWrong, inputValue]);
   };
 
-  
+  const handleInput = e => {
+
+  }
 
   return (
     <div className="App">
@@ -39,13 +41,14 @@ const App = () => {
           disabled={disabled}
           time={time}
           animation={animation}
+          handleInput={handleInput}
         />
-        </Container>
-        <Results
-          correctResults={correctResults}
-          wrongResults={wrongResults}
-          countCorrect={countCorrect}
-        /> 
+      </Container>
+      <Results
+        correctResults={correctResults}
+        wrongResults={wrongResults}
+        countCorrect={countCorrect}
+      /> 
     </div>
   );
 };
