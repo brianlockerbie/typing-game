@@ -1,7 +1,16 @@
 import React from "react";
 import Button from "./Button";
 
-const Typeracer = () => {
+const Typeracer = (props) => {
+    const { newWord, inputValue, setInputValue, disabled, time, animation } = props;
+
+    newWord={newWord}
+    inputValue={inputValue}
+    setInputValue={setInputValue}
+    disabled={disabled}
+    time={time}
+    animation={animation}
+
   return (
     <div className="typeRacer">
       <div className="wordOutput">

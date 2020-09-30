@@ -20,7 +20,14 @@ const App = () => {
   return (
     <div className="App">
       <Container>
-
+        <Typeracer
+          newWord={newWord}
+          inputValue={inputValue}
+          setInputValue={setInputValue}
+          disabled={disabled}
+          time={time}
+          animation={animation}
+        />
       </Container> 
     </div>
   );
