@@ -17,3 +17,5 @@ const Typeracer = () => {
     </div>
   );
 };
+
+export default Typeracer;
