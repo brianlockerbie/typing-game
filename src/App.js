@@ -13,10 +13,21 @@ const App = () => {
   const [wrongResults, setWrongResults] = useState([]);
   const [countCorrect, setCountCorrect] = useState(0);
   const [time, setTime] = useState(30);
-  const [inputValue, setInputValue] = useState('');
+  const [inputValue, setInputValue] = useState("");
   const [animation, setAnimation] = useState(null);
   
   let randomWord = Math.floor(Math.random() * word.length);
+
+  const checkAnswer = () => {
+    if (inputValue.trim() === newWord) {
+      setCorrectResults((prevCorrect) => [...prevCorrect, newWord]);
+      setCountCorrect(prevCorrect => prevCorrect + 1);
+      return;
+    }
+    setWrongResults(prevWrong => [...prevWrong, inputValue]);
+  };
+
+  
 
   return (
     <div className="App">
@@ -29,12 +40,12 @@ const App = () => {
           time={time}
           animation={animation}
         />
+        </Container>
         <Results
           correctResults={correctResults}
           wrongResults={wrongResults}
           countCorrect={countCorrect}
-        />
-      </Container> 
+        /> 
     </div>
   );
 };

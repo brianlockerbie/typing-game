@@ -18,7 +18,7 @@ const Typeracer = (props) => {
       </div>
       <div 
         style={( animation: animation !== null ? animation : "" )}
-        className ="time"
+        className="time"
       >
         <p>{time}</p>
       </div>
