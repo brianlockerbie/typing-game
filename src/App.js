@@ -28,8 +28,20 @@ const App = () => {
   };
 
   const handleInput = e => {
+    if (e.checkAnswer === 13 && inputValue.trim() !== '') {
+      checkAnswer();
+      setnewWord(word[randomWord]);
+      setInputValue('');
+    }
+  };
 
-  }
+  const handleStart = () => {
+    setDisabled(!disabled);
+    setCorrectResults([]);
+    setWrongResults([]);
+    setCountCorrect(0);
+    setInputValue("");
+  };
 
   return (
     <div className="App">
@@ -42,6 +54,7 @@ const App = () => {
           time={time}
           animation={animation}
           handleInput={handleInput}
+          handleStart={handleStart}
         />
       </Container>
       <Results
