@@ -27,11 +27,11 @@ const App = () => {
     setWrongResults(prevWrong => [...prevWrong, inputValue]);
   };
 
-  const handleInput = e => {
-    if (e.checkAnswer === 13 && inputValue.trim() !== '') {
+  const handleInput = (e) => {
+    if (e.charCode === 13 && inputValue.trim() !== '') {
       checkAnswer();
       setNewWord(word[randomWord]);
-      setInputValue('');
+      setInputValue("");
     }
   };
 
