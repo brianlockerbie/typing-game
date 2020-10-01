@@ -11,5 +11,5 @@ You have 30 seconds to type the displayed word.For each word your spell correctl
 
 ## 🚀 Features
 - 30 seconds to type the displayed words.
-- Words spealt correctly will go to the left side of the scorebboard.
-- Words spealt incorrectly will go to the right side of the scorebboard.
+- Words spelt correctly will go to the left side of the scorebboard.
+- Words spelt incorrectly will go to the right side of the scorebboard.
