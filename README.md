@@ -1,1 +1,1 @@
-<h1 align="center">## ⌨️Typing Game</h1>
+<h1 align="center">⌨️Typing Game</h1>
