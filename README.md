@@ -5,3 +5,11 @@
 
 ## 🎮 How to play
 1. To start a game, type "npm start" in the terminal
+2. Press the "Start" button on the game
+
+You have 30 seconds to type the displayed word.For each word your spell correctley you gain +1 point. 
+
+## 🚀 Features
+- 30 seconds to type the displayed words.
+- Words spealt correctly will go to the left side of the scorebboard.
+- Words spealt incorrectly will go to the right side of the scorebboard.
