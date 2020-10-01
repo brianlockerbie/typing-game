@@ -7,7 +7,7 @@ import "./App.css";
 
 const App = () => {
   const [word, setWord] = useState(Words);
-  const [newWord,setnewWord] = useState(word[0]);
+  const [newWord,setNewWord] = useState(word[0]);
   const [disabled, setDisabled] = useState(true);
   const [correctResults, setCorrectResults] = useState([]);
   const [wrongResults, setWrongResults] = useState([]);
@@ -30,7 +30,7 @@ const App = () => {
   const handleInput = e => {
     if (e.checkAnswer === 13 && inputValue.trim() !== '') {
       checkAnswer();
-      setnewWord(word[randomWord]);
+      setNewWord(word[randomWord]);
       setInputValue('');
     }
   };
@@ -45,7 +45,7 @@ const App = () => {
 
   useEffect(() => {
     if (time <= 30 && time !== 0 && disabled === false) {
-      setTimeout(() => setTime((prevTime) => prevTime - 1, 1000);
+      setTimeout(() => setTime((prevTime) => prevTime - 1), 1000);
     } else if (disabled) {
       setTime(30);
       setAnimation(null);
@@ -59,7 +59,7 @@ const App = () => {
   }, [disabled, time]);
 
   useEffect(() => {
-    setnewWord(word[randomWord]);
+    setNewWord(word[randomWord]);
   }, []);
 
   return (
