@@ -3,7 +3,7 @@
 <p align="center">The 30-second typing game</p>
 
 
-## 🕹 Live Demo: https://youthful-babbage-b8ecba.netlify.app/
+## 🕹 Live Demo: https://react-typing-game.netlify.app/
 
 ## 🎮 How to play
 1. Press the "Start" button on the game
